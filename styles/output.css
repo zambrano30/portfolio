@@ -244,14 +244,6 @@
     width: calc(var(--spacing) * 100);
     height: calc(var(--spacing) * 100);
   }
-  .size-150 {
-    width: calc(var(--spacing) * 150);
-    height: calc(var(--spacing) * 150);
-  }
-  .size-200 {
-    width: calc(var(--spacing) * 200);
-    height: calc(var(--spacing) * 200);
-  }
   .h-1 {
     height: calc(var(--spacing) * 1);
   }
