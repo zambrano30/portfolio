@@ -13,18 +13,18 @@
       rel="stylesheet"
     />
   </head>
-  <body class="bg-gray-100 dark:bg-gray-800 overflow-x-hidden">
+  <body class="bg-gray-200 dark:bg-slate-800 overflow-x-hidden w-min-[full]">
     <header
-      class="bg-gray-500 flex flex-row justify-between items-center w-full"
+      class="bg-gray-400 flex flex-row justify-between items-center w-full"
     >
       <img src="./images/logo.webp" alt="" class="size-25" />
 
-      <div class="flex p-4 m-3 justify-end items-center gap-10">
+      <div class="flex p-2  justify-end items-center gap-10">
         <div class="md:hidden relative m-4 p-4">
           <input id="menu-toggle" type="checkbox" class="peer hidden" />
           <label
             for="menu-toggle"
-            class="flex flex-col gap-1 cursor-pointer z-50 mt-2"
+            class="flex flex-col gap-1 cursor-pointer z-50 mt-1"
           >
             <span
               class="block w-8 h-1 bg-cyan-800 rounded dark:bg-white"
@@ -38,9 +38,9 @@
           </label>
           <!-- Menú móvil centrado -->
           <nav
-            class="fixed inset-0 bg-zinc-100 bg-opacity-90 flex flex-col items-center justify-center gap-8 text-cyan-800 text-2xl scale-0 peer-checked:scale-100 transition-transform duration-300 md:hidden z-40"
+            class="fixed inset-0 bg-zinc-100 bg-opacity-90 flex flex-col items-center justify-center gap-4 text-cyan-800 text-2xl scale-0 peer-checked:scale-100 transition-transform duration-300 md:hidden z-40"
           >
-            <ul class="flex flex-col gap-6 items-center">
+            <ul class="flex flex-col gap-4 items-center">
               <li>Home</li>
               <li>Skills</li>
               <li>Projects</li>
@@ -80,7 +80,7 @@
     </header>
     <section class="flex flex-col justify-center items-center">
       <h1
-        class="text-5xl m-12 p-12 md:m-8 md:text-6xl flex justify-center items-center font-bold mt-16 bg-gradient-to-r from-cyan-700 to-cyan-950 bg-clip-text text-transparent"
+        class="text-4xl m-2 p-4 md:m-8 md:text-6xl flex justify-center items-center font-extrabold mt-16 bg-gradient-to-r from-cyan-700 to-cyan-950 bg-clip-text text-transparent"
       >
         Web Fronted Developer
       </h1>
@@ -118,33 +118,28 @@
 
     <!-- Projects -->
     <section
-      class="w-[75%] border border-gray-200 rounded-4xl gap-8 flex flex-col justify-center items-center mx-auto my-12"
+      class=" border border-gray-200 rounded-4xl gap-20 flex flex-col justify-center items-center mx-auto my-12"
     >
       <h2
         class="flex justify-center text-4xl font-bold p-4 m-4 bg-gradient-to-r from-cyan-700 to-cyan-950 bg-clip-text text-transparent"
       >
         Projects
       </h2>
-      <div class="flex flex-col justify-center items-center gap-8">
-        <div
-          class="w-100px h-30px hover:border-2 border-cyan-800 hover:rounded flex flex-col-reverse justify-center items-center hover:scale-105 hover hover:opacity-90"
-        >
+     
+
           <a
-            class="text-2xl font-bold flex flex-col p-4 justify-center items-center bg-gradient-to-r from-cyan-700 to-cyan-950 bg-clip-text text-transparent"
+            class="text-2xl font-bold flex flex-col-reverse  justify-center items-center bg-gradient-to-r from-cyan-700 to-cyan-950 bg-clip-text text-transparent"
             href="https://zambrano30.github.io/wdd131/"
-            ><img
-              class="max-w-full h-auto"
+            >
+            <img
+              class="max-w-[90%] h-auto object-cover rounded-xl"
               src="./images/Coursepage.png"
-              alt=""
-            />
-            Course page</a
-          >
-        </div>
-        <div
-          class="w-100px h-30px hover:border-2 border-cyan-800 flex flex-col justify-center items-center hover:scale-105hover:opacity-90"
-        >
+              alt=""/>
+            Course page</a>
+       
+       
           <a
-            class="text-2xl font-bold flex flex-col justify-center items-center bg-gradient-to-r from-cyan-700 to-cyan-950 bg-clip-text text-transparent"
+            class="text-2xl font-bold flex flex-col-reverse justify-center items-center bg-gradient-to-r from-cyan-700 to-cyan-950 bg-clip-text text-transparent"
             href="https://zambrano30.github.io/wdd130/wwr/about.html"
             ><img
               class="max-w-full h-auto"
@@ -153,12 +148,10 @@
             />
             Rafting page</a
           >
-        </div>
-        <div
-          class="w-100px h-30px hover:border-2 border-cyan-800 flex flex-co justify-center items-center hover:scale-105hover:opacity-90 bg-gradient-to-r from-cyan-700 to-cyan-950 bg-clip-text text-transparent"
-        >
+      
+       
           <a
-            class="text-2xl font-bold flex flex-col justify-center items-center"
+            class="text-2xl font-bold flex flex-col justify-center items-center bg-gradient-to-r from-cyan-700 to-cyan-950 bg-clip-text text-transparent"
             href="https://zambrano30.github.io/Homepage/home"
             ><img
               class="max-w-full h-auto"
@@ -167,8 +160,7 @@
             />
             Bakery page</a
           >
-        </div>
-      </div>
+      
     </section>
 
     <!-- Skills -->
@@ -182,8 +174,8 @@
         xmlns="http://www.w3.org/2000/svg"
         x="0px"
         y="0px"
-        width="100"
-        height="100"
+        width="80"
+        height="80"
         viewBox="0 0 48 48"
       >
         <path fill="#E65100" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path>
@@ -197,12 +189,17 @@
           d="M24,30.9v4.2l-7.9-2.6L15.7,27h4l0.2,2.5L24,30.9z M19.1,17H24v-4h-9.1l0.7,12H24v-4h-4.6L19.1,17z"
         ></path>
       </svg>
+      <div class="w-40 bg-gray-300 rounded-full h-3 mt-2 mb-6 ">
+        <div class="bg-cyan-700 h-3 rounded-full" style="width: 80%">
+        </div>
+        <div class="flex justify-center text-xl font-bold ">80%</div>
+      </div>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         x="0px"
         y="0px"
-        width="100"
-        height="100"
+        width="80"
+        height="80"
         viewBox="0 0 100 100"
       >
         <path
@@ -250,26 +247,42 @@
           d="M50,74.116c-0.053,0-0.105-0.008-0.156-0.025L34.46,69.028c-0.195-0.064-0.332-0.242-0.343-0.448	l-0.585-10.71c-0.008-0.137,0.042-0.271,0.136-0.371c0.095-0.1,0.226-0.156,0.363-0.156h7.79c0.269,0,0.489,0.212,0.5,0.48	l0.181,4.526L50,64.909l7.508-2.564l0.526-7.897H41.432c-0.267,0-0.486-0.209-0.499-0.475l-0.39-7.79	c-0.007-0.137,0.042-0.271,0.137-0.37s0.226-0.155,0.362-0.155h17.452l0.509-6.789H32.668c-0.262,0-0.479-0.202-0.499-0.462	l-0.584-7.79c-0.01-0.139,0.038-0.276,0.133-0.377c0.095-0.102,0.228-0.16,0.366-0.16h35.637c0.138,0,0.27,0.057,0.364,0.158	s0.144,0.236,0.135,0.374l-2.337,37.973c-0.013,0.205-0.148,0.381-0.343,0.445l-15.384,5.063C50.105,74.107,50.053,74.116,50,74.116	z M35.097,68.185L50,73.089l14.905-4.906l2.283-37.104H32.623l0.509,6.79h26.41c0.139,0,0.271,0.058,0.366,0.16	c0.095,0.102,0.143,0.238,0.133,0.377l-0.584,7.789c-0.02,0.261-0.237,0.462-0.499,0.462H41.567l0.34,6.79h16.661	c0.139,0,0.271,0.057,0.365,0.158s0.143,0.237,0.134,0.375l-0.584,8.763c-0.014,0.201-0.146,0.375-0.338,0.44l-7.984,2.727	c-0.104,0.036-0.219,0.036-0.322,0l-7.984-2.727c-0.196-0.067-0.33-0.247-0.339-0.453l-0.175-4.388H34.56L35.097,68.185z"
         ></path>
       </svg>
+      <div class="w-40 bg-gray-300 rounded-full h-3 mt-2 mb-6">
+        <div class="bg-cyan-700 h-3 rounded-full" style="width: 80%">
+        </div>
+          <div class="flex justify-center text-xl font-bold ">80%</div>
+      </div>
+      </div>
+      
       <svg
         xmlns="http://www.w3.org/2000/svg"
         x="0px"
         y="0px"
-        width="100"
-        height="100"
+        width="80"
+        height="80"
         viewBox="0 0 48 48"
       >
-        <path fill="#f7df1e" d="M6,42V6h36v36H6z"></path>
+        <path
+          fill="#f7df1e"
+          d="M6,42V6h36v36H6z"></path>
         <path
           fill="#000001"
           d="M29.538,32.947c0.692,1.124,1.444,2.201,3.037,2.201c1.338,0,2.04-0.665,2.04-1.585 c0-1.101-0.726-1.492-2.198-2.133l-0.807-0.344c-2.329-0.988-3.878-2.226-3.878-4.841c0-2.41,1.845-4.244,4.728-4.244 c2.053,0,3.528,0.711,4.592,2.573l-2.514,1.607c-0.553-0.988-1.151-1.377-2.078-1.377c-0.946,0-1.545,0.597-1.545,1.377 c0,0.964,0.6,1.354,1.985,1.951l0.807,0.344C36.452,29.645,38,30.839,38,33.523C38,36.415,35.716,38,32.65,38 c-2.999,0-4.702-1.505-5.65-3.368L29.538,32.947z M17.952,33.029c0.506,0.906,1.275,1.603,2.381,1.603 c1.058,0,1.667-0.418,1.667-2.043V22h3.333v11.101c0,3.367-1.953,4.899-4.805,4.899c-2.577,0-4.437-1.746-5.195-3.368 L17.952,33.029z"
         ></path>
       </svg>
+      <div class="w-40 bg-gray-300 rounded-full h-3 mt-2 mb-6">
+        <div class="bg-cyan-700 h-3 rounded-full" style="width: 80%">
+          
+        </div>
+          <div class="flex justify-center text-xl font-bold ">40%</div>
+      </div>
+      </div>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         x="0px"
         y="0px"
-        width="100"
-        height="100"
+        width="80"
+        height="80"
         viewBox="0 0 80 80"
       >
         <path
@@ -291,20 +304,33 @@
           ></path>
         </g>
       </svg>
+      <div class="w-40 bg-gray-300 rounded-full h-3 mt-2 mb-6">
+        <div class="bg-cyan-700 h-3 rounded-full" style="width: 20%">
+        </div>
+          <div class="flex justify-center text-xl font-bold ">20%</div>
+      </div>
+      </div>
+      
       <svg
         xmlns="http://www.w3.org/2000/svg"
         x="0px"
         y="0px"
-        width="100"
-        height="100"
+        width="80"
+        height="80"
         viewBox="0 0 48 48"
-        class="col-span-2"
+        
       >
         <path
           fill="#00acc1"
           d="M24,9.604c-6.4,0-10.4,3.199-12,9.597c2.4-3.199,5.2-4.398,8.4-3.599 c1.826,0.456,3.131,1.781,4.576,3.247C27.328,21.236,30.051,24,36,24c6.4,0,10.4-3.199,12-9.598c-2.4,3.199-5.2,4.399-8.4,3.6 c-1.825-0.456-3.13-1.781-4.575-3.247C32.672,12.367,29.948,9.604,24,9.604L24,9.604z M12,24c-6.4,0-10.4,3.199-12,9.598 c2.4-3.199,5.2-4.399,8.4-3.599c1.825,0.457,3.13,1.781,4.575,3.246c2.353,2.388,5.077,5.152,11.025,5.152 c6.4,0,10.4-3.199,12-9.598c-2.4,3.199-5.2,4.399-8.4,3.599c-1.826-0.456-3.131-1.781-4.576-3.246C20.672,26.764,17.949,24,12,24 L12,24z"
         ></path>
       </svg>
+      <div class="w-40 bg-gray-300 rounded-full h-3 mt-2 mb-6">
+        <div class="bg-cyan-700 h-3 rounded-full" style="width: 80%">
+        </div>
+          <div class="flex justify-center text-xl font-bold ">60%</div>
+      </div>
+      </div>
     </section>
 
     <!-- Academics -->
@@ -320,7 +346,7 @@
       action=""
     >
       <h2
-        class="text-3xl font-bold my-8 bg-cyan-200 rounded-3xl px-4 py-2 bg-gradient-to-r from-cyan-700 to-cyan-950 bg-clip-text text-transparent"
+        class="text-2xl font-bold my-8 bg-cyan-200 rounded-3xl px-4 py-2 bg-gradient-to-r from-cyan-700 to-cyan-950 bg-clip-text text-transparent"
       >
         Do you want to work together ?
       </h2>
@@ -440,9 +466,7 @@
           ></path>
           <path
             fill="#40c351"
-            d="M35.176,12.832c-2.98-2.982-6.941-4.625-11.157-4.626c-8.704,0-15.783,7.076-15.787,15.774c-0.001,2.981,0.833,5.883,2.413,8.396l0.376,0.597l-1.595,5.821l5.973-1.566l0.577,0.342c2.422,1.438,5.2,2.198,8.032,2.199h0.006c8.698,0,15.777-7.077,15.78-15.776C39.795,19.778,38.156,15.814,35.176,12.832z"
-          ></path>
-          <path
+            d="M35.176,12.832c-2.98-2.982-6.941-4.625-11.157-4.626
             fill="#fff"
             fill-rule="evenodd"
             d="M19.268,16.045c-0.355-0.79-0.729-0.806-1.068-0.82c-0.277-0.012-0.593-0.011-0.909-0.011c-0.316,0-0.83,0.119-1.265,0.594c-0.435,0.475-1.661,1.622-1.661,3.956c0,2.334,1.7,4.59,1.937,4.906c0.237,0.316,3.282,5.259,8.104,7.161c4.007,1.58,4.823,1.266,5.693,1.187c0.87-0.079,2.807-1.147,3.202-2.255c0.395-1.108,0.395-2.057,0.277-2.255c-0.119-0.198-0.435-0.316-0.909-0.554s-2.807-1.385-3.242-1.543c-0.435-0.158-0.751-0.237-1.068,0.238c-0.316,0.474-1.225,1.543-1.502,1.859c-0.277,0.317-0.554,0.357-1.028,0.119c-0.474-0.238-2.002-0.738-3.815-2.354c-1.41-1.257-2.362-2.81-2.639-3.285c-0.277-0.474-0.03-0.731,0.208-0.968c0.213-0.213,0.474-0.554,0.712-0.831c0.237-0.277,0.316-0.475,0.474-0.791c0.158-0.317,0.079-0.594-0.04-0.831C20.612,19.329,19.69,16.983,19.268,16.045z"
@@ -452,7 +476,7 @@
     </div>
     <footer class="p-4 flex items-center justify-center bg-gray-300">
       <p
-        class="p-4 m-4 text-xl font-bold bg-gradient-to-r from-cyan-700 to-cyan-950 bg-clip-text text-transparent"
+        class="p-2 m-4  font-bold bg-gradient-to-r from-cyan-700 to-cyan-950 bg-clip-text text-transparent"
       >
         ©️ Developed by Christopher Zambrano - Ecuador 💙
       </p>
