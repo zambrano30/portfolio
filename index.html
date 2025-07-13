@@ -13,14 +13,14 @@
       rel="stylesheet"
     />
   </head>
-  <body class="bg-gray-200 dark:bg-slate-800 overflow-x-hidden w-min-[full]">
+  <body class="bg-gray-200 dark:bg-slate-800 overflow-x-hidden w-min-[full] ">
     <header
-      class="bg-gray-400 flex flex-row justify-between items-center w-full md:w-full md:flex md:flex-row"
+      class="bg-gray-400 flex flex-row justify-between items-center w-full lg:flex-row"
     >
-      <img src="./images/logo.webp" alt="" class="size-25 md:size:60" />
+      <img src="./images/logo.webp" alt="" class="size-25 md:size-50 lg:size:80" />
 
       <div class="flex p-2 justify-end items-center gap-10">
-        <div class=" sm:hidden md:hidden relative m-4 p-4">
+        <div class="lg:hidden relative m-4 p-4">
           <input id="menu-toggle" type="checkbox" class="peer hidden" />
           <label
             for="menu-toggle"
@@ -38,7 +38,7 @@
           </label>
           <!-- Menú móvil centrado -->
           <nav
-            class="fixed inset-0 bg-zinc-100 bg-opacity-90 flex flex-col items-center justify-center gap-4 text-cyan-800 text-2xl scale-0 peer-checked:scale-100 transition-transform duration-300 md:hidden z-40"
+            class="fixed inset-0 bg-zinc-100 bg-opacity-90 flex flex-col items-center justify-center gap-4 text-cyan-800 text-2xl scale-0 peer-checked:scale-100 transition-transform duration-300 lg:hidden z-40"
           >
             <ul class="flex flex-col gap-4 items-center">
               <li>Home</li>
@@ -49,8 +49,8 @@
           </nav>
         </div>
         <!-- Menú normal en desktop -->
-        <nav class="hidden sm:block ">
-          <ul class="flex flex-row gap-8 items-center text-3xl md: p-16">
+        <nav class="hidden lg:block">
+          <ul class="flex flex-row gap-8 items-center text-2xl md:text-3xl lg:text-4xl lg:p-16 font-bold">
             <li>Home</li>
             <li>Skills</li>
             <li>Projects</li>
@@ -72,7 +72,7 @@
     </header>
     <section class="flex flex-col justify-center items-center">
       <h1
-        class=" text-4xl m-2 p-2 md:m-8 md:text-6xl flex justify-center items-center font-bold mt-16 bg-gradient-to-r from-cyan-700 to-cyan-950 bg-clip-text text-transparent"
+        class=" text-4xl m-2 p-2 md:m-8 md:text-6xl flex justify-center items-center font-bold mt-16 bg-gradient-to-r from-cyan-700 to-cyan-950 bg-clip-text text-transparent lg:text-8xl"
       >
         Web Fronted Developer
       </h1>
@@ -92,14 +92,14 @@
  
      <!-- About me -->
     <section
-      class="max-w-[700px] w-full m-4 pb-12 flex flex-col justify-center items-center rounded-4xl border-2 border-gray-400 hover:bg-gray-300 mx-auto my-12   "
+      class="max-w-[700px] w-full m-2 pb-2 flex flex-col justify-center items-center rounded-4xl border-2 border-gray-400 hover:bg-gray-300 mx-auto my-12 lg:max-w-[1200px] lg:h-150  "
     >
       <h2
-        class="text-4xl font-bold p-4 bg-gradient-to-r from-cyan-700 to-cyan-950 bg-clip-text text-transparent"
+        class="text-4xl font-bold p-4 bg-gradient-to-r from-cyan-700 to-cyan-950 bg-clip-text text-transparent lg:mt-0 lg:p-2"
       >
         About me
       </h2>
-      <p class="text-xl font-bold px-6 md:text-3xl text-center">
+      <p class="text-xl font-bold px-6 md:text-3xl text-center lg:text-4xl lg:px-2 lg:m-2">
         I am a dedicated and responsible <strong class="font-bold">frontend developer</strong> who is truly
         passionate about web development. I love my work and enjoy every
         challenge that comes with creating modern, attractive, and functional
@@ -109,7 +109,7 @@
       </p>
        
        <button
-          class="bg-cyan-800 border-0 px-4 py-2.5 rounded-4xl text-white flex  justify-center items-center mn-w-[150px] hover:bg-zinc-100 hover:text-cyan-800 hover:border border-cyan-800 md:px-8 md:mt-4  md:text-2xl">Download CV
+          class="bg-cyan-800 border-0 px-4 py-2 rounded-4xl text-white flex  justify-center items-center mn-w-[150px] hover:bg-zinc-100 hover:text-cyan-800 hover:border border-cyan-800 md:px-8 md:mt-2  md:text-2xl lg:mt-12 lg:mb-2 lg:text-3xl font-bold ">Download CV
         </button>
           
     </section>
@@ -312,7 +312,7 @@
               class="max-w-[90%] h-auto object-cover rounded-xl"
               src="./images/Coursepage.png"
               alt=""/>
-             <span class="m-2 p-2 ">Course page</span></a>
+             <span class="m-2 p-2 md:text-3xl ">Course page</span></a>
        
        
           <a
@@ -323,7 +323,7 @@
               src="./images/rafting-page.png"
               alt=""
             />
-           <span class="m-2 p-2 ">Rafting page</span></a
+           <span class="m-2 p-2 md:text-3xl  ">Rafting page</span></a
           >
       
        
@@ -335,7 +335,7 @@
               src="./images/bakery-page.png"
               alt=""
             />
-            <span class="m-2 p-2 ">Bakery page</span></a
+            <span class="m-2 p-2 md:text-3xl  ">Bakery page</span></a
           >
       
     </section>
@@ -349,52 +349,52 @@
       >
         Academics
       </h2>
-      <div class="flex flex-col justify-center items-center gap-12 bg-gray-300 m-12 p-12 min-w-full">
-        <img class="md:w-50" src="https://brightspotcdn.byui.edu/dims4/default/041182f/2147483647/strip/true/crop/100x58+0+0/resize/76x44!/quality/90/?url=https%3A%2F%2Fbyu-idaho-brightspot-production-us-east-2.s3.us-east-2.amazonaws.com%2Ff2%2F6f%2Fa2c043a64e0488068d9dc10578cd%2Fbyu-idaho-logo-blue-100.png" alt="">
-      <img class="w-60 md:w-100 md:h-45" src="./images/funval.png" alt="Funval Internacional">
+      <div class="flex flex-col md:flex-row justify-center items-center gap-12 bg-gray-300 m-12 p-12 min-w-full">
+        <img class="md:w-60" src="https://brightspotcdn.byui.edu/dims4/default/041182f/2147483647/strip/true/crop/100x58+0+0/resize/76x44!/quality/90/?url=https%3A%2F%2Fbyu-idaho-brightspot-production-us-east-2.s3.us-east-2.amazonaws.com%2Ff2%2F6f%2Fa2c043a64e0488068d9dc10578cd%2Fbyu-idaho-logo-blue-100.png" alt="">
+      <img class="w-60 md:w-80  p-2 " src="./images/funval.png" alt="Funval Internacional">
       </div>
     </section>
     <form
-      class="w-[400px] border-1 border-cyan-700 rounded-3xl flex flex-col items-center justify-center gap-8 mx-auto my-8"
+      class=" w-[350] md:w-[600px] border-1 border-cyan-700 rounded-3xl flex flex-col items-center justify-center gap-8 mx-auto my-8 md:gap-12 lg:w-[1000px] "
       action=""
     >
       <h2
-        class="text-2xl font-bold my-8 bg-cyan-200 rounded-3xl px-4 py-2 bg-gradient-to-r from-cyan-700 to-cyan-950 bg-clip-text text-transparent"
+        class="text-2xl font-bold my-8 bg-cyan-200 rounded-3xl px-4 py-2 bg-gradient-to-r from-cyan-700 to-cyan-950 bg-clip-text text-transparent md:text-4xl md:p-1 lg:text-5xl lg:p-2 lg:my-6"
       >
         Do you want to work together ?
       </h2>
-      <label class="text-2xl font-bold" for=""> Full Name</label>
+      <label class="text-2xl font-bold md:text-3xl lg:text-4xl : " for=""> Full Name</label>
       <input
-        class="border-1 border-cyan-950 rounded-3xl py-2 px-12"
+        class="border-1 border-cyan-950 rounded-3xl py-2 px-12 md:text-3xl "
         type="text"
         placeholder="Luis Vargas"
       />
-      <label class="text-2xl font-bold" for="">Company</label>
+      <label class="text-2xl font-bold md:text-3xl lg:text-4xl :" for="">Company</label>
       <input
-        class="border-1 border-cyan-950 rounded-3xl py-2 px-12"
+        class="border-1 border-cyan-950 rounded-3xl py-2 px-12 md:text-3xl"
         type="text"
         placeholder="Microsoft"
       />
-      <label class="text-2xl font-bold" for="">Email</label>
+      <label class="text-2xl font-bold md:text-3xl lg:text-4xl :" for="">Email</label>
       <input
-        class="border-1 border-cyan-950 rounded-3xl py-2 px-12"
+        class="border-1 border-cyan-950 rounded-3xl py-2 px-12 md:text-3xl"
         type="text"
         placeholder="luisvargas@gmail.com"
       />
-      <label class="text-2xl font-bold" for="">Cell-phone</label>
+      <label class="text-2xl font-bold md:text-3xl lg:text-4xl :" for="">Cell-phone</label>
       <input
-        class="border-1 border-cyan-950 rounded-3xl py-2 px-12"
+        class="border-1 border-cyan-950 rounded-3xl py-2 px-12 md:text-3xl"
         type="text"
         placeholder="+593980576786"
       />
 
       <button
-        class="flex justify-center items-center text-white text-xl font-bold border-1 rounded-3xl p-2 px-8 border-gray-500 bg-cyan-950 m-6 hover:bg-blue-300"
+        class="flex justify-center items-center text-white text-xl font-bold border-1 rounded-3xl p-2 px-8 border-gray-500 bg-cyan-950 m-6 hover:bg-blue-300 md:px-12 md:text-3xl lg:px-30"
       >
         Submit
       </button>
     </form>
-    <div class="flex  justify-center items-center gap-8 m-20">
+    <div class="flex  justify-center items-center gap-8 m-20 md:gap-4 ">
       <div>
         <a href="https://github.com/zambrano30"
           ><svg
@@ -404,6 +404,7 @@
             width="30"
             height="30"
             viewBox="0 0 40 40"
+            class="md:size-20"
           >
             <path
               fill="#b6c9d6"
@@ -428,6 +429,7 @@
             width="30"
             height="30"
             viewBox="0 0 40 40"
+             class="md:size-20"
           >
             <path fill="#8bb7f0" d="M2.5 2.5H37.5V37.5H2.5z"></path>
             <path
@@ -449,6 +451,7 @@
             width="30"
             height="30"
             viewBox="0 0 50 50"
+             class="md:size-20"
           >
             <path
               d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"
@@ -457,39 +460,34 @@
       </div>
     </div>
     <div class="fixed bottom-4 right-4 z-50">
-      <a href="https://wa.me/593980576786">
+      <a href="https://wa.me/593980576786" class="block bg-green-500 rounded-full p-3 shadow-lg hover:bg-green-600 transition-all duration-300 hover:scale-110">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="40"
           height="40"
           viewBox="0 0 48 48"
-          class="hover:scale-90 hover:opacity-40"
+          class="fill-white"
         >
           <path
-            fill="#fff"
             d="M4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98c-0.001,0,0,0,0,0h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303z"
-          ></path>
+          />
           <path
-            fill="#fff"
             d="M4.868,43.803c-0.132,0-0.26-0.052-0.355-0.148c-0.125-0.127-0.174-0.312-0.127-0.483l2.639-9.636c-1.636-2.906-2.499-6.206-2.497-9.556C4.532,13.238,13.273,4.5,24.014,4.5c5.21,0.002,10.105,2.031,13.784,5.713c3.679,3.683,5.704,8.577,5.702,13.781c-0.004,10.741-8.746,19.48-19.486,19.48c-3.189-0.001-6.344-0.788-9.144-2.277l-9.875,2.589C4.953,43.798,4.911,43.803,4.868,43.803z"
-          ></path>
-          <path
-            fill="#cfd8dc"
-            d="M24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,4C24.014,4,24.014,4,24.014,4C12.998,4,4.032,12.962,4.027,23.979c-0.001,3.367,0.849,6.685,2.461,9.622l-2.585,9.439c-0.094,0.345,0.002,0.713,0.254,0.967c0.19,0.192,0.447,0.297,0.711,0.297c0.085,0,0.17-0.011,0.254-0.033l9.687-2.54c2.828,1.468,5.998,2.243,9.197,2.244c11.024,0,19.99-8.963,19.995-19.98c0.002-5.339-2.075-10.359-5.848-14.135C34.378,6.083,29.357,4.002,24.014,4L24.014,4z"
-          ></path>
+          />
           <path
             fill="#40c351"
-            d="M35.176,12.832c-2.98-2.982-6.941-4.625-11.157-4.626
+            d="M35.176,12.832c-2.98-2.982-6.941-4.625-11.157-4.626c-8.704,0-15.783,7.076-15.787,15.774c-0.001,2.981,0.833,5.883,2.413,8.396l0.376,0.597l-1.595,5.821l5.973-1.566l0.577,0.342c2.422,1.438,5.2,2.198,8.032,2.199h0.006c8.698,0,15.777-7.077,15.78-15.776C39.795,19.778,38.156,15.814,35.176,12.832z"
+          />
+          <path
             fill="#fff"
-            fill-rule="evenodd"
             d="M19.268,16.045c-0.355-0.79-0.729-0.806-1.068-0.82c-0.277-0.012-0.593-0.011-0.909-0.011c-0.316,0-0.83,0.119-1.265,0.594c-0.435,0.475-1.661,1.622-1.661,3.956c0,2.334,1.7,4.59,1.937,4.906c0.237,0.316,3.282,5.259,8.104,7.161c4.007,1.58,4.823,1.266,5.693,1.187c0.87-0.079,2.807-1.147,3.202-2.255c0.395-1.108,0.395-2.057,0.277-2.255c-0.119-0.198-0.435-0.316-0.909-0.554s-2.807-1.385-3.242-1.543c-0.435-0.158-0.751-0.237-1.068,0.238c-0.316,0.474-1.225,1.543-1.502,1.859c-0.277,0.317-0.554,0.357-1.028,0.119c-0.474-0.238-2.002-0.738-3.815-2.354c-1.41-1.257-2.362-2.81-2.639-3.285c-0.277-0.474-0.03-0.731,0.208-0.968c0.213-0.213,0.474-0.554,0.712-0.831c0.237-0.277,0.316-0.475,0.474-0.791c0.158-0.317,0.079-0.594-0.04-0.831C20.612,19.329,19.69,16.983,19.268,16.045z"
-            clip-rule="evenodd"
-          ></path></svg
-      ></a>
+          />
+        </svg>
+      </a>
     </div>
     <footer class="p-4 flex items-center justify-center bg-gray-300">
       <p
-        class="p-2 m-4  font-bold bg-gradient-to-r from-cyan-700 to-cyan-950 bg-clip-text text-transparent"
+        class="p-2 m-4  font-bold bg-gradient-to-r from-cyan-700 to-cyan-950 bg-clip-text text-transparent md:text-3xl lg:text-4xl"
       >
         ©️ Developed by Christopher Zambrano - Ecuador 💙
       </p>
