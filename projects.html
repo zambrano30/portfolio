@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./scripts/projectos.js" defer ></script>
+
+  </head>
+  <body>
+   <header
+      class="bg-gray-400 flex flex-row justify-between items-center w-full lg:flex-row"
+    >
+      <img src="./images/logo.webp" alt="" class="size-25 md:size-50 lg:size:80" />
+
+      <div class="flex p-2 justify-end items-center gap-10">
+        <div class="lg:hidden relative m-4 p-4">
+          <input id="menu-toggle" type="checkbox" class="peer hidden" />
+          <label
+            for="menu-toggle"
+            class="flex flex-col gap-1 cursor-pointer z-50 mt-1"
+          >
+            <span
+              class="block w-8 h-1 bg-cyan-800 rounded dark:bg-white"
+            ></span>
+            <span
+              class="block w-8 h-1 bg-cyan-800 rounded dark:bg-white"
+            ></span>
+            <span
+              class="block w-8 h-1 bg-cyan-800 rounded dark:bg-white"
+            ></span>
+          </label>
+          <!-- Menú móvil centrado -->
+          <nav
+            class="fixed inset-0 bg-zinc-100 bg-opacity-90 flex flex-col items-center justify-center gap-4 text-cyan-800 text-2xl scale-0 peer-checked:scale-100 transition-transform duration-300 lg:hidden z-40"
+          >
+            <ul class="flex flex-col gap-4 items-center">
+              <li>Home</li>
+              <li>Skills</li>
+              <li><a href="./projects.html"></a></li>
+              <li>
+
+                <!-- Botón de cambio de tema en menú móvil -->
+                <label class="ui-switch flex items-center justify-center">
+                  <input type="checkbox" id="dark-toggle-menu" />
+                  <div class="slider">
+                    <div class="circle"></div>
+                  </div>
+                </label>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        
+        <!-- Menú normal en desktop -->
+        <nav class="hidden lg:block">
+          <ul class="flex flex-row gap-8 items-center text-2xl md:text-3xl lg:text-4xl lg:p-16 font-bold">
+            <li>Home</li>
+            <li>Skills</li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li>
+              <!-- Botón de cambio de tema para desktop -->
+              <label class="ui-switch flex items-center justify-center">
+                <input type="checkbox" id="dark-toggle" />
+                <div class="slider">
+                  <div class="circle"></div>
+                </div>
+              </label>
+            </li>
+          </ul>
+        </nav>
+        
+        <!-- Botón de cambio de tema para móviles -->
+        <label class="ui-switch flex items-center justify-center lg:hidden">
+          <input type="checkbox" id="dark-toggle-mobile" />
+          <div class="slider">
+            <div class="circle"></div>
+          </div>
+        </label>
+      </div>
+      
+    </header>
+    <main id="projects" class="" >
+        <h1 class="text-4xl font-bold text-center mt-8">Projectos</h1>
+        <div id="projects_cards" >
+
+        </div>
+
+    </main>
+        <footer class="p-4 flex items-center justify-center bg-gray-300">
+      <p
+        class="p-2 m-4  font-bold bg-gradient-to-r from-cyan-700 to-cyan-950 bg-clip-text text-transparent md:text-3xl lg:text-4xl"
+      >
+        ©️ Developed by Christopher Zambrano - Ecuador 💙
+      </p>
+    </footer>
+  </body>
+</html>
