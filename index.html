@@ -12,9 +12,10 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap"
       rel="stylesheet"
     />
-    <script src="./scripts/skills.js" defer></script>
+    <script src="./scripts/main.js" type="module" defer 
+    ></script>
   </head>
-  <body class="bg-gray-200 dark:bg-slate-500 overflow-x-hidden w-min-[full]">
+  <body class="bg-gray-200 dark:bg-slate-500 overflow-x-hidden min-w-full">
     <header
       class="bg-gray-400 flex flex-row justify-between items-center w-full lg:flex-row"
     >
@@ -25,39 +26,31 @@
       />
 
       <div class="flex p-2 justify-end items-center gap-10">
-        <div class="lg:hidden relative m-4 p-4">
+        <div class="lg:hidden relative">
           <input id="menu-toggle" type="checkbox" class="peer hidden" />
           <label
             for="menu-toggle"
-            class="flex flex-col gap-1 cursor-pointer z-50 mt-1"
+            class="flex flex-col gap-1.5 cursor-pointer z-50 p-3 hover:bg-gray-300/50 dark:hover:bg-slate-600/50 rounded-lg transition-all duration-200"
           >
             <span
-              class="block w-8 h-1 bg-cyan-800 rounded dark:bg-white"
+              class="block w-6 h-0.5 bg-cyan-800 dark:bg-white rounded-full transition-all duration-300 peer-checked:rotate-45 peer-checked:translate-y-2"
             ></span>
             <span
-              class="block w-8 h-1 bg-cyan-800 rounded dark:bg-white"
+              class="block w-6 h-0.5 bg-cyan-800 dark:bg-white rounded-full transition-all duration-300 peer-checked:opacity-0"
             ></span>
             <span
-              class="block w-8 h-1 bg-cyan-800 rounded dark:bg-white"
+              class="block w-6 h-0.5 bg-cyan-800 dark:bg-white rounded-full transition-all duration-300 peer-checked:-rotate-45 peer-checked:-translate-y-2"
             ></span>
           </label>
           <!-- Menú móvil centrado -->
           <nav
-            class="fixed inset-0 bg-zinc-100 bg-opacity-90 flex flex-col items-center justify-center gap-4 text-cyan-800 text-2xl scale-0 peer-checked:scale-100 transition-transform duration-300 lg:hidden z-40"
+            class="fixed inset-0 bg-white/95 dark:bg-slate-800/95 backdrop-blur-sm flex flex-col items-center justify-center text-cyan-800 dark:text-white text-xl scale-0 peer-checked:scale-100 transition-all duration-300 ease-in-out lg:hidden z-40 mx-25 my-35"
           >
-            <ul class="flex flex-col gap-4 items-center">
-              <li>Home</li>
-              <li>Skills</li>
-              <li><a href="./projects.html">Projects</a></li>
-              <li>
-                <!-- Botón de cambio de tema en menú móvil -->
-                <label class="ui-switch flex items-center justify-center">
-                  <input type="checkbox" id="dark-toggle-menu" />
-                  <div class="slider">
-                    <div class="circle"></div>
-                  </div>
-                </label>
-              </li>
+            <ul class="flex flex-col gap-6 items-center text-center">
+              <li><a href="#" class="hover:text-cyan-600 transition-colors duration-200 py-2 px-4 rounded-lg hover:bg-cyan-50 dark:hover:bg-slate-700">Home</a></li>
+              <li><a href="#skills" class="hover:text-cyan-600 transition-colors duration-200 py-2 px-4 rounded-lg hover:bg-cyan-50 dark:hover:bg-slate-700">Skills</a></li>
+              <li><a href="./projects.html" class="hover:text-cyan-600 transition-colors duration-200 py-2 px-4 rounded-lg hover:bg-cyan-50 dark:hover:bg-slate-700">Projects</a></li>
+
             </ul>
           </nav>
         </div>
@@ -68,7 +61,7 @@
             class="flex flex-row gap-8 items-center text-2xl text-cyan-800 md:text-3xl lg:text-4xl lg:p-16 font-bold"
           >
             <li><a class="hover:text-white" href="#">Home</a></li>
-            <li><a class="hover:text-white" href="#">Skills</a></li>
+            <li><a class="hover:text-white" href="#skills">Skills</a></li>
             <li>
               <a class="hover:text-white" href="./projects.html">Projects</a>
             </li>
@@ -146,7 +139,7 @@
     <!-- Skills -->
     <section
       id="skills"
-      class="w-full grid grid-cols-2 my-20 place-items-center gap-6 px-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+      class="w-full grid grid-cols-2 my-20 place-items-center gap-6 px-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3"
     >
       <h2
         class="text-4xl font-bold p-4 m-4 col-span-full bg-gradient-to-r from-cyan-700 to-cyan-950 bg-clip-text text-transparent"
@@ -203,28 +196,32 @@
         Full Name</label
       >
       <input
-        class="border-1 border-cyan-950 rounded-3xl py-2 px-12 md:text-3xl"
+        class="border-1 border-cyan-950 rounded-3xl py-2 px-12 md:text-3xl form-field-focus transition-all duration-300 hover:shadow-md focus:outline-none"
         type="text"
         placeholder="Luis Vargas"
+        required
       />
       <label class="text-2xl font-bold md:text-3xl lg:text-4xl :" for=""
         >Company</label
       >
       <input
-        class="border-1 border-cyan-950 rounded-3xl py-2 px-12 md:text-3xl"
+        class="border-1 border-cyan-950 rounded-3xl py-2 px-12 md:text-3xl form-field-focus transition-all duration-300 hover:shadow-md focus:outline-none"
         type="text"
         placeholder="Microsoft"
+        required
       />
       <label class="text-2xl font-bold md:text-3xl lg:text-4xl :" for=""
         >Email</label
       >
       <input
-        class="border-1 border-cyan-950 rounded-3xl py-2 px-12 md:text-3xl"
-        type="text"
+        class="border-1 border-cyan-950 rounded-3xl py-2 px-12 md:text-3xl form-field-focus transition-all duration-300 hover:shadow-md focus:outline-none"
+        type="email"
         placeholder="luisvargas@gmail.com"
+        required
       />
       <button
-        class="flex justify-center items-center text-white text-xl font-bold border-1 rounded-3xl p-2 px-8 border-gray-500 bg-cyan-950 m-6 hover:bg-blue-300 md:px-12 md:text-3xl lg:px-30"
+        type="submit"
+        class="flex justify-center items-center text-white text-xl font-bold border-1 rounded-3xl p-2 px-8 border-gray-500 bg-cyan-950 m-6 hover:bg-blue-300 md:px-12 md:text-3xl lg:px-30 loading-button transition-all duration-300 hover:scale-105 hover:shadow-lg"
       >
         Submit
       </button>
@@ -331,49 +328,6 @@
       </p>
     </footer>
 
-    <script>
-      // Función para alternar el modo oscuro
-      function toggleDarkMode(isChecked) {
-        document.body.classList.toggle("dark", isChecked);
-        // Sincronizar todos los botones
-        const desktopToggle = document.getElementById("dark-toggle");
-        const mobileToggle = document.getElementById("dark-toggle-mobile");
-        const menuToggle = document.getElementById("dark-toggle-menu");
-
-        if (desktopToggle) desktopToggle.checked = isChecked;
-        if (mobileToggle) mobileToggle.checked = isChecked;
-        if (menuToggle) menuToggle.checked = isChecked;
-      }
-
-      // Configurar todos los botones
-      const desktopToggle = document.getElementById("dark-toggle");
-      const mobileToggle = document.getElementById("dark-toggle-mobile");
-      const menuToggle = document.getElementById("dark-toggle-menu");
-
-      // Sincronizar el estado inicial
-      const isDarkMode = document.documentElement.classList.contains("dark");
-      if (desktopToggle) desktopToggle.checked = isDarkMode;
-      if (mobileToggle) mobileToggle.checked = isDarkMode;
-      if (menuToggle) menuToggle.checked = isDarkMode;
-
-      // Eventos para todos los botones
-      if (desktopToggle) {
-        desktopToggle.addEventListener("change", function () {
-          toggleDarkMode(this.checked);
-        });
-      }
-
-      if (mobileToggle) {
-        mobileToggle.addEventListener("change", function () {
-          toggleDarkMode(this.checked);
-        });
-      }
-
-      if (menuToggle) {
-        menuToggle.addEventListener("change", function () {
-          toggleDarkMode(this.checked);
-        });
-      }
-    </script>
+    
   </body>
 </html>
