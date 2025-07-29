@@ -21,6 +21,27 @@ export const projectsArray = [
     image: "./images/Coursepage.png",
     link:"https://zambrano30.github.io/wdd131/",
   },
+  {
+    name: "Calculator app ",
+    description:
+      "Modern calculator application with elegant design, smooth animations, and intuitive user experience. Features include basic and advanced mathematical operations with responsive layout for desktop and mobile devices.",
+    image: "./images/calculator.png",
+    link:"https://zambrano30.github.io/wdd131/",
+  },
+  {
+    name: "Todo app",
+    description:
+      "Interactive task management application built with modern web technologies. Features include adding, editing, and deleting tasks, marking items as complete, local storage for data persistence, and a clean, intuitive user interface with responsive design.",
+    image: "./images/todo-app.png",
+    link:"https://todo-app-main-ten.vercel.app/",
+  },
+  {
+    name: "Cart shopping emulator",
+    description:
+      "E-commerce shopping cart simulation featuring product browsing, cart management, quantity adjustments, and checkout process. Built with JavaScript to demonstrate dynamic pricing calculations, item filtering, and smooth user interactions with modern UI design.",
+    image: "./images/cart-emulator.png",
+    link:"https://carrito-sigma-seven.vercel.app/",
+  },
 ];
 
 // Función para renderizar las tarjetas de proyectos
@@ -30,7 +51,7 @@ export function renderProjectCards() {
   if (projectsCard) {
     for (let i = 0; i < projectsArray.length; i++) {
       projectsCard.innerHTML += `
-        <a href="${projectsArray[i].link}" target="_blank" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 w-full max-w-4xl mx-auto mb-6 transition-all duration-300 ease-in-out hover:shadow-lg hover:scale-[1.02] hover:-translate-y-1 opacity-0 translate-y-4" style="animation-delay: ${i * 150}ms">
+        <a href="${projectsArray[i].link}" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 w-full max-w-4xl mx-auto mb-6 transition-all duration-300 ease-in-out hover:shadow-lg hover:scale-[1.02] hover:-translate-y-1 opacity-0 translate-y-4" style="animation-delay: ${i * 150}ms">
         <img class="object-cover w-full h-48 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-s-lg transition-transform duration-300 hover:scale-105" src="${projectsArray[i].image}" alt="${projectsArray[i].name}">
         <div class="flex flex-col justify-between p-4 leading-normal">
           <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white md:text-2xl transition-colors duration-300 hover:text-cyan-600 dark:hover:text-cyan-400">${projectsArray[i].name}</h5>
@@ -41,9 +62,9 @@ export function renderProjectCards() {
               <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
             </svg>
           </div>
-      </div>
-  </a>
-  `;
+        </div>
+      </a>
+      `;
     }
     
     // Animar la aparición de las tarjetas de proyectos
@@ -67,4 +88,13 @@ export function toggleDark() {
 
 // Ejecutar automáticamente cuando se carga el módulo
 document.addEventListener('DOMContentLoaded', renderProjectCards);
+
+// Elimina cualquier event listener que pueda estar interfiriendo
+document.addEventListener('click', function(e) {
+  // Asegúrate de que no haya preventDefault() en enlaces
+  if (e.target.closest('a[href]')) {
+    console.log('Click en enlace:', e.target.closest('a[href]').href);
+    // NO usar e.preventDefault() aquí
+  }
+});
 
